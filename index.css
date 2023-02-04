@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    font-family: 'Rubik';
+    margin: 20px 100px;
+}
+
+::selection {
+    background: #009C6D;
+    color: white;
+}
+
+header {
+    height: 75px;
+    border: solid #F76B6B;
+    border-width: 0 0 5px 0;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+h2 {
+    width: 370px;
+    font-weight: 500;
+    font-size: 30px;
+    color: #009C6D;
+    margin-bottom: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+}
+
+.dados {
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #009C6D;
+    border: 4px solid #F76B6B;
+    border-radius: 100px;
+    width: 250px;
+    height: 30px;
+    padding: 10px 40px;
+}
+
+.dados::placeholder {
+    color: #009C6D;
+}
+
+.dados:focus {
+    outline: 0;
+}
+
+.lembrar-container {
+    display: flex;
+    justify-content: center;
+
+    /* ATENÇÃO: não é gambiarra, é porque eu ocultei o checkbox original mas ele ainda ocupa espaço, então tive que compensar esse espaço com um margin negativo :D */
+    margin-left: -35px;
+}
+
+.lembrar {
+    position: relative;
+    display: none;
+}
+
+label[for="lembrar"] {
+    display: flex;
+    align-items: center;
+    color: #009C6D;
+    user-select: none;
+}
+
+label[for="lembrar"]:before {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #D9D9D9;
+    background-color: #D9D9D9;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.lembrar:checked + label:before {
+    font-size: 18px;
+    border: 2px solid #009C6D;
+    background-color: #009C6D;
+}
+
+.cadastro {
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    font-family: 'Rubik';
+    background-color: #009C6D;
+    color: white;
+    border: none;
+    width: 340px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cadastro:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all .3s ease-in-out;
+    background-color: #00825b;
+}
+
+.olho {
+    cursor: pointer;
+    width: 25px;
+    height: auto;
+    position: relative;
+    top: 5px;
+    right: 50px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
     <title>Cadastrar-se</title>
 </head>
 <body>
@@ -14,17 +15,21 @@
     <main>
         <h2>Cadastre-se gratuitamente e comece a ouvir suas músicas favoritas.</h2>
 
-        <form>
-            <p><input type="text" placeholder="E-mail"></p>
-            <p><input type="password" placeholder="Senha"> <img src="./imagens/olho.png" alt="Mostrar Senha"></p>
+        <form action="home.html">
+            <p><input type="email" placeholder="E-mail" class="dados"></p>
+            <p><input type="password" placeholder="Senha" class="dados" id="senha"> <img src="./imagens/olho.png" alt="Mostrar Senha" class="olho" onclick="mostrar()"></p>
 
-            <p><input type="checkbox" id="lembrar">
-            <label for="lembrar">Lembrar de mim</label></p>
+            <div class="lembrar-container">
+                <input type="checkbox" id="lembrar" class="lembrar">
+                <label for="lembrar">Lembrar de mim</label>
+              </div>              
 
-            <p><input type="submit" value="Cadastrar-se"></p>
+            <p><input type="submit" value="Cadastrar-se" class="cadastro"></p>
         </form>
     </main>
 
     <footer><p>©️ Todos os direitos reservados para IFRN</p></footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
