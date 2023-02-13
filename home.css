@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
-header {
-    display: flex;
-}
-
 body {
-    height: 1000px;
     font-family: 'Rubik';
     margin: 20px 100px;
+}
+
+::selection {
+    background: #009C6D;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border: solid #F76B6B;
+    border-width: 0 0 5px 0;
+}
+
+main {
+    margin: 0px 150px;
 }
 
 ul {
@@ -18,8 +31,9 @@ ul {
     flex-direction: row;
 }
 
-li {
-    margin: 30px;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .nomeMusica {
@@ -39,6 +53,11 @@ li {
 }
 
 .slaDeMusica {
+    background: rgba(211, 211, 211, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     align-items: center;
     padding: 30px;
     display: flex;
@@ -51,8 +70,7 @@ li {
     text-align: center;
     bottom: 0px;
     margin: auto;
-    background-color: lightgray;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .nomes {

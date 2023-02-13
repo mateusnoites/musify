@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    margin: 150px;
+}
+
+body::before {
+    content: "";
+    background-image: url("./imagens/caneta.png");
+    background-size: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+}
+
+main {
+    z-index: 1;
+    font-family: 'Rubik';
+    text-align: center;
+}
+
+.audio-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50%;
+}
+
+audio {
+    display: inline-block;
+    width: 100%;
+}
+
+.imagem {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

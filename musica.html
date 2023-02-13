@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="musica.css">
     <title>Eu Vou Deixar de Ser Besta</title>
 </head>
 <body>
     <main>
-        <img src="./imagens/capa-grande.png" alt="Capa">
+        <img class="imagem" src="./imagens/capa-grande.png" alt="Capa">
 
-        <h2>Eu Vou Deixar de Ser Besta</h2>
-        <h3>Manoel Gomes</h3>   
+        <div class="nomes">
+            <h2 class="nomeMusica">Eu Vou Deixar de Ser Besta</h2>
+            <h3 class="nomeArtista">Manoel Gomes</h3>
+        </div>
 
-        <audio controls>
-            <source src="./audios/besta.mp3" type="audio/mpeg">
-            Seu navegador não suporta áudio tag.
-        </audio>
+        <div class="audio-container">
+            <audio controls>
+                <source src="./audios/besta.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio tag.
+            </audio>
+        </div>
     </main>
 </body>
 </html>
