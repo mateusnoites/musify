@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    font-family: 'Rubik';
+    margin: 20px 100px;
+}
+
+ul {
+    margin: auto;
+}
+
+li {
+    line-height: 0pt;
+    display: inline-block;
+    text-align: left;
+    width: 15vw;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.nomeMusica {
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.nomeArtista {
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.imagem {
+    margin-bottom: 0;
+}
